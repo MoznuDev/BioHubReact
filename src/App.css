@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+@theme {
+  --spacing-mContainer: 1170px;
+  
+  
+
+  --color-bgColor: #070824; 
+  --color-textColor: #070721;
+  --color-bg1Color: #220E60;
+
+
+}
