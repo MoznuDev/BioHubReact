@@ -1,15 +1,20 @@
 
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Footer from './Components/Footer'
-import Banner from './Components/Layout/Banner'
-import ContractMe from './Components/Layout/ContractMe'
-import Customer from './Components/Layout/Coustomer'
-import Header from './Components/Layout/Header'
-import MyClient from './Components/Layout/MyClient'
-import MyResume from './Components/Layout/MyResume'
-import MyWork from './Components/Layout/MyWork'
-import RecentPost from './Components/Layout/RecentPost'
+import RootLayout from './Components/Layout/RootLayout'
+import Home from './Components/Page/Home'
+import About from './Components/Page/About'
+import Contract from './Components/Page/Contract'
 import Service from './Components/Layout/Service'
+import MySkills from './Components/Page/MySkills';
+import Portfolio from './Components/Page/Portfolio'
+import Testimonials from './Components/Page/Testimonials'
+import Blog from './Components/Page/Blog'
+
+
+
+
 
 
 function App() {
@@ -17,16 +22,18 @@ function App() {
 
   return (
     <>
-      <Header/>
-      <Banner/>
-      <Service/>
-      <MyWork/>
-      <MyResume/>
-      <Customer/>
-      <MyClient/>
-      <RecentPost/>
-      <ContractMe/>
-      <Footer/>
+    <Routes>
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        <Route path="/service" element={<Service/>} />
+        <Route path="/portfolio" element={<Portfolio/>} />
+        <Route path="/testimonials" element={<Testimonials/>}/>
+        <Route path="/blog" element={<Blog/>}/>
+        <Route path="/mySkills" element={<MySkills/>} />
+        <Route path="/contract" element={<Contract/>} />
+      </Route>
+    </Routes>
     </>
   )
 }

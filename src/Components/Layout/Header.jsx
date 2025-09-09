@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../Button'
 import Image from '../Image'
 import Logo from '../../assets/Logo.png'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -16,28 +17,30 @@ const Header = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-         <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Home</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Service</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Portfolio</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>My Skills</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Testimonials</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Blog</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Contact</li>
+          <Link to={"/"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Home</Link>
+      <Link to={"/service"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Service</Link>
+      <Link to={"/portfolio"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Portfolio</Link>
+      <Link to={"/myskills"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>My Skills</Link>
+      <Link to={"/testimonials"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Testimonials</Link>
+      <Link to={"/blog"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Blog</Link>
+      <Link to={"/contract"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Contact</Link>
       </ul>
     </div>
     <div className="">
+        <Link to={"/http://localhost:5173"}>
         <h1 className='text-2xl font-bold hover:text-blue-700'>Moznur Rahman</h1>
+        </Link>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Home</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Service</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Portfolio</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>My Skills</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Testimonials</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Blog</li>
-      <li className='text-[16px] font-medium px-4 hover:text-blue-700 '>Contact</li>
+      <Link to={"/"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Home</Link>
+      <Link to={"/service"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Service</Link>
+      <Link to={"/portfolio"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Portfolio</Link>
+      <Link to={"/myskills"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>My Skills</Link>
+      <Link to={"/testimonials"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Testimonials</Link>
+      <Link to={"/blog"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Blog</Link>
+      <Link to={"/contract"} className='text-[16px] font-medium px-4 hover:text-blue-700 '>Contact</Link>
     </ul>
   </div>
   <div className="navbar-end">

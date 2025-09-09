@@ -6,7 +6,7 @@ import Furniro from "../../assets/Furniro.jpg"
 import Trust from "../../assets/Trust.jpg"
 import Adobe from "../../assets/Adobe.jpg"
 
-const MyWork = () => {
+const MyPortfolio = () => {
   return (
     <>
       <div className="bg-bgColor py-[100px]">
@@ -117,4 +117,4 @@ const MyWork = () => {
   );
 };
 
-export default MyWork;
+export default MyPortfolio;
